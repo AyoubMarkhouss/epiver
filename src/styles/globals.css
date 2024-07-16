@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blurred {
+  height: 100px;
+  backdrop-filter: blur(105px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.233);
+  background-color: #6f4e37;
+  transition: background-color 0.3s ease;
+}
+.trans {
+  position: absolute;
+  height: 100px;
+  transition: background-color 0.3s ease;
+  background: transparent;
+}
+@font-face {
+  font-family: "reg";
+  src: url("/Fonts/Gambetta-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "reg";
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
